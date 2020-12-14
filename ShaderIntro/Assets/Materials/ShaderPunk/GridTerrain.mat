@@ -1,0 +1,33 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!21 &2100000
+Material:
+  serializedVersion: 6
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_Name: GridTerrain
+  m_Shader: {fileID: -6465566751694194690, guid: 90aa5d1f1a55b5b4c9856eb5ee21900f,
+    type: 3}
+  m_ShaderKeywords: 
+  m_LightmapFlags: 4
+  m_EnableInstancingVariants: 0
+  m_DoubleSidedGI: 0
+  m_CustomRenderQueue: -1
+  stringTagMap: {}
+  disabledShaderPasses: []
+  m_SavedProperties:
+    serializedVersion: 3
+    m_TexEnvs: []
+    m_Floats:
+    - Vector1_24D9AD74: 2.55
+    - Vector1_4D158644: 1
+    - Vector1_53CCB236: 7.5
+    - Vector1_573DFAF2: 2
+    - Vector1_8AB55D2B: 12.8
+    - Vector1_8DBCC97F: 3
+    - Vector1_EEF6D992: 1
+    m_Colors:
+    - Color_22FBF20B: {r: 0.13612564, g: 1.3717277, b: 1.9999998, a: 1}
+    - Color_3CBF496F: {r: 0.049588002, g: 0.0071760006, b: 0.092, a: 1}
