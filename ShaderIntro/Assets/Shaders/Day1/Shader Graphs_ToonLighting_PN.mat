@@ -1,0 +1,32 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!21 &2100000
+Material:
+  serializedVersion: 6
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_Name: Shader Graphs_ToonLighting_PN
+  m_Shader: {fileID: -6465566751694194690, guid: 47bda04fa3b1b794e87bc908c976ae42,
+    type: 3}
+  m_ShaderKeywords: 
+  m_LightmapFlags: 4
+  m_EnableInstancingVariants: 0
+  m_DoubleSidedGI: 0
+  m_CustomRenderQueue: -1
+  stringTagMap: {}
+  disabledShaderPasses: []
+  m_SavedProperties:
+    serializedVersion: 3
+    m_TexEnvs:
+    - Texture2D_D95382D0:
+        m_Texture: {fileID: 10309, guid: 0000000000000000f000000000000000, type: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    m_Floats:
+    - Vector1_7593FB47: 0
+    m_Colors:
+    - Color_1059E5B3: {r: 0.8490566, g: 0.7520128, b: 0.59674263, a: 1}
+    - Color_4C249243: {r: 0.119565986, g: 0.11120505, b: 0.1981132, a: 1}
+    - Vector3_B787B4E1: {r: 0.41, g: 0.64, b: -0.72, a: 0}
