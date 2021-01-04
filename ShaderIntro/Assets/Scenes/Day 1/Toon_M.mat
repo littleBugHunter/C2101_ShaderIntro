@@ -21,11 +21,11 @@ Material:
     serializedVersion: 3
     m_TexEnvs: []
     m_Floats:
-    - Vector1_EE42FCAF: 0
+    - Vector1_EE42FCAF: 0.2
     m_Colors:
     - Color_897796FD: {r: 0.19298676, g: 0.20061687, b: 0.24528292, a: 0}
     - Color_9368B201: {r: 0.8679245, g: 0.8187271, b: 0.6501246, a: 0}
-    - Vector3_EE11FC5D: {r: 0, g: 0, b: 0, a: 0}
+    - Vector3_EE11FC5D: {r: 0.02, g: -0.18, b: -0.05, a: 0.13}
   m_BuildTextureStacks: []
 --- !u!114 &135523425056260938
 MonoBehaviour:
