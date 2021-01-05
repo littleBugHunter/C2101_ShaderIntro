@@ -64,6 +64,7 @@ Shader "ShaderCourse/ToonLighting"
                 float3 normal = normalize(vertexToFragment.normal);
                 _SunDirection = normalize(_SunDirection);
                 float dotProduct = dot(normal, _SunDirection);
+                //return dotProduct;
 
                 float3 lightColor;
                 // Comparison
