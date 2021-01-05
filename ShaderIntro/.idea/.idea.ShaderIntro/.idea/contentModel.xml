@@ -13,6 +13,7 @@
         <e p="Shaders" t="Include">
           <e p="Day2" t="Include">
             <e p="ToonLighting_PN.shader" t="Include" />
+            <e p="UvMappingCodeExamples.shader" t="Include" />
           </e>
           <e p="DeviceContext" t="Include">
             <e p="DeviceContext.shader" t="Include" />
