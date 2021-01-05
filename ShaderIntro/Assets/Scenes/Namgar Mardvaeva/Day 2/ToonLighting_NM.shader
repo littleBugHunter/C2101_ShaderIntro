@@ -1,4 +1,4 @@
-﻿Shader "Unlit/ToonLighting_NM"
+﻿Shader "Namgar Mardvaeva/ToonLighting_NM"
 {
     Properties
     {
@@ -13,7 +13,7 @@
         {
             CGPROGRAM
             #pragma vertex VertexShader_
-            #pragma fragment frag
+            #pragma fragment FrsgmentShader
 
             #include "UnityCG.cginc"
 
