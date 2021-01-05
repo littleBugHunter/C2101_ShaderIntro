@@ -7,7 +7,7 @@ Material:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: Shader Graphs_uvMapping
+  m_Name: Shader Graphs_lava-acid
   m_Shader: {fileID: -6465566751694194690, guid: bf6cb5f66cc6b3c4080e29a6d71f2ffb,
     type: 3}
   m_ShaderKeywords: 
@@ -21,8 +21,12 @@ Material:
     serializedVersion: 3
     m_TexEnvs: []
     m_Floats:
+    - Vector1_147C77FD: 200
+    - Vector1_69BA6C91: 30
+    - Vector1_6E7C8A1F: 10
+    - Vector1_B391947A: 1
     - Vector1_E9B0C111: 3
     m_Colors:
-    - Color_45E50424: {r: 0.23166609, g: 0.3584906, b: 0.30795085, a: 0}
+    - Color_45E50424: {r: 0.31132078, g: 0.31132078, b: 0.31132078, a: 0}
     - Color_59375AF3: {r: 1, g: 0, b: 0.2252388, a: 0}
-    - Vector2_E38057EF: {r: 1, g: 1, b: 0, a: 0}
+    - Vector2_E38057EF: {r: 3.4, g: 0.41, b: 1, a: 1}
