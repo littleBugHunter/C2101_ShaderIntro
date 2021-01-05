@@ -27,7 +27,7 @@
             struct VertexData
             {
                 float4 position : POSITION;
-                float4 normal : NORMAL;
+                float3 normal : NORMAL;
                 float2 uv : TEXCOORD0;
             };
 
@@ -49,7 +49,7 @@
             {
                 VertexToFragment vertexToFragment;
                 vertexToFragment.position = UnityObjectToClipPos(vertexData.position);
-                vertexToFragment.normal = vertexData.normal;
+                vertexToFragment.normal = mul(UNITY_MATRIX_M, vertexData.normal);
                 vertexToFragment.uv = vertexData.uv;
                 return vertexToFragment;
             }
