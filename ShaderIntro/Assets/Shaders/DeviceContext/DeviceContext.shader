@@ -87,7 +87,7 @@
                 float3 worldPos : TEXCOORD1;
             };
 
-            sampler2D _MainTex;
+            sampler2D main_tex;
             float4 _MainTex_ST;
             float4 _Color;
 
@@ -105,14 +105,14 @@
             fixed4 frag_unlit (v2f i) 
             {
                 // sample the texture
-                fixed4 col = tex2D(_MainTex, i.uv) * _Color;
+                fixed4 col = tex2D(main_tex, i.uv) * _Color;
                 return col;
             }
             
             fixed4 frag_lambert (v2f i) 
             {
                 // sample the texture
-                fixed4 col = tex2D(_MainTex, i.uv) * _Color;
+                fixed4 col = tex2D(main_tex, i.uv) * _Color;
                 float4 lightDir = _WorldSpaceLightPos0;
                 if(lightDir.w > 0.5) {
                     lightDir.xyz = normalize(i.worldPos - lightDir.xyz); 
