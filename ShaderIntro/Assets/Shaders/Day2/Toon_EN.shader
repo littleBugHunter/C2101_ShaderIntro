@@ -1,46 +1,78 @@
-﻿Shader "Unlit/ToonEN" {
-    Properties {
+﻿Shader "Unlit/ToonEN"
+{
+    Properties
+    {
+        _LightDirection ("LightDirection", vector) = (0, 0.8, 0, 0)
         _Threshold ("Threshold", float) = 0
         _LightColor ("LightColor", color) = (1, 1, 1, 1)
         _ShadowColor ("ShadowColor", color) = (0, 0, 0, 1)
         _MainTex ("Texture", 2D) = "white" {}
     }
-    SubShader {
-        Tags {
+    SubShader
+    {
+        Tags
+        {
             "RenderType"="Opaque"
         }
         LOD 100
 
-        Pass {
+        Pass
+        {
             CGPROGRAM
-            #pragma vertex vertex_shader
-            #pragma fragment fragment_shader
+            #pragma vertex VertexShader_
+            #pragma fragment FragmentShader_
 
             #include "UnityCG.cginc"
 
-            struct vertex_data {
+            struct VertexData
+            {
                 float4 position : POSITION;
-                float4 normal   : NORMAL;
-                float2 uv       : TEXCOORD0;
+                float4 normal : NORMAL;
+                float2 uv : TEXCOORD0;
             };
 
-            struct vertex_to_fragment {
-                float2 uv       : TEXCOORD0;
-                float4 vertex   : SV_POSITION;
+            struct VertexToFragment
+            {
+                float4 position : SV_POSITION;
+                float3 normal : NORMAL;
+                float2 uv : TEXCOORD0;
             };
 
+            float3 _LightDirection;
+            float _Threshold;
+            float4 _LightColor;
+            float4 _ShadowColor;
             sampler2D _MainTex;
-            float4 main_tex_st;
+            float4 _MainTex_ST;
 
-            vertex_to_fragment vertex_shader(vertex_data vertex_data) {
-                vertex_to_fragment output;
-                output.vertex = UnityObjectToClipPos(vertex_data.position); // mul(UNITY_MATRIX_MVP, vertex_data.position)
-                output.uv = vertex_data.uv;
-                return output;
+            VertexToFragment VertexShader_(VertexData vertexData)
+            {
+                VertexToFragment vertexToFragment;
+                vertexToFragment.position = UnityObjectToClipPos(vertexData.position);
+                vertexToFragment.normal = vertexData.normal;
+                vertexToFragment.uv = vertexData.uv;
+                return vertexToFragment;
             }
 
-            fixed4 fragment_shader(vertex_to_fragment vertex_to_fragment) : SV_Target {
-                fixed4 color = tex2D(_MainTex, vertex_to_fragment.uv);
+            fixed4 FragmentShader_(VertexToFragment vertexToFragment) : SV_Target
+            {
+                float4 color;
+                
+                float3 normalNormal = normalize(vertexToFragment.normal);
+                float3 normalLightDir = normalize(_LightDirection);
+                float dotProduct = dot(normalNormal, normalLightDir);
+
+                if (dotProduct > _Threshold)
+                {
+                    color = _LightColor;
+                }
+                else
+                {
+                    color = _ShadowColor;
+                }
+
+                color = color * tex2D(_MainTex, vertexToFragment.uv);
+
                 return color;
             }
             ENDCG
