@@ -24,11 +24,19 @@ Material:
         m_Texture: {fileID: 10309, guid: 0000000000000000f000000000000000, type: 0}
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
+    - _MainTex:
+        m_Texture: {fileID: 10309, guid: 0000000000000000f000000000000000, type: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
     m_Floats:
-    - Vector1_F0FCEBC9: 0.43
-    - _LightTreshhold: 0.89
+    - Vector1_F0FCEBC9: 0.04
+    - _LightTreshhold: 0.95
+    - _Treshhold: 0.4
+    - _Treshold: 0.37
     m_Colors:
     - Color_58E3EA9F: {r: 0.6509434, g: 0.6470285, b: 0.5404058, a: 0}
     - Color_DEFB8BC7: {r: 0.32491544, g: 0.2662869, b: 0.6415094, a: 0}
     - Color_EBA3ABEA: {r: 1, g: 0.93041456, b: 0.6320754, a: 0}
-    - _SunDirection: {r: -1.11, g: 1.88, b: -1.91, a: 0}
+    - _DarkColor: {r: 0.26788887, g: 0.22427909, b: 0.6603774, a: 0}
+    - _LightColor: {r: 1, g: 0.9921172, b: 0.764151, a: 0}
+    - _SunDirection: {r: 4.96, g: 4.35, b: -0.92, a: 0}
