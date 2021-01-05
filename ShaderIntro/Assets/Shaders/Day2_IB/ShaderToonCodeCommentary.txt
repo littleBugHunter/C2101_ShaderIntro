@@ -4,8 +4,9 @@
     {
         _MainTex ("Texture", 2D) = "white" {} 		//("NameOF Category, 2d(=you have a 2d texture)
 	_MainTex ("A Color", Color) = (1,0,0,1) 	//you can put stuff behind the name, when use Color you need to use rgb
-	_MainTex ("A Value ", Range(0,1)) = 0		//create a slider //float would create float, int would get Int
+	_MainTex ("A Value ", Range(0,1)) = 1		//create a slider //float would create float, int would get Int
 	_MainTex ("A Vector", Vector) = (0,0,0,0)	//create vector you can do mor look online
+	_SundDirection("Sun DIrection",Vector) =(0,1,0,0);
 
     }
 
@@ -27,15 +28,18 @@
             struct VertexData			//Struct = kinda like a class (!!can not have funktions only values !!)
             {
                 float4 vertex 	: POSITION;
-		float3 normal 	: NORMAL;
+		float3 normal 	: NORMAL;	//add in both fragment and vertex
                 float2 uv 	: TEXCOORD0;
+
             };
 
 
             struct VertexToFragment
             {
                 float2 uv 	: TEXCOORD0; 
+		float3 normal	: NORMAL;
                 float4 vertex 	: SV_POSITION;
+
             }; //Semicolon at end of stetment
 
 
@@ -47,32 +51,35 @@
 
             VertexToFragment VertexShader_ (VertexData vertexData)
             {
-                VertexToFragment output;
+                		
+		VertexToFragment output;		
+				
+		output.position = UnityObjectToClipPos(vertexData.vertex); //output.vertex = mul(UNITY_MATRIX_MVP, vertexData-position);     //unity does not like this line           
 
-		//output.vertex = mul(UNITY_MATRIX_MVP, vertexData-position);     //unity does not like this line           
-		output.vertex = UnityObjectToClipPos(vertexData.vertex);
- 
+ 		output.normal = vertexData.normal;
 
-                // output.uv = TRANSFORM_TEX(vertexData.uv, _MainTex); 
-		//uised internantl funktions so we do it our self
-		output.uv = vertexData.uv;
-
-                UNITY_TRANSFER_FOG(o,o.vertex);
+		output.uv = vertexData.uv;		// output.uv = TRANSFORM_TEX(vertexData.uv, _MainTex); 
+							//would beused internantl funktions but we do it our self
+               						// UNITY_TRANSFER_FOG(o,o.vertex);//we delete this because its anojing and confusing
 
                 return output;
             };
 
 
-//graphis card does stuff 
+//----------GPU IS DOING THINGS WITH DATA------------------ 
 
-            float FragmentShader (VertexToFragment vertexToFragment) : SV_Target
+
+
+            float4 FragmentShader (VertexToFragment vertexToFragment) 
             {
-                // sample the texture
+                vertexToFragment.normal = normalize(vertexToFragment.normal);
+
+		// sample the texture
                 fixed4 col = tex2D(_MainTex, vertexToFragment.uv); //sampel texture apply to right point
 
                 // apply fog //we dont want fog its confusing
                 //UNITY_APPLY_FOG(vertexToFragment.fogCoord, col);
-
+		
                 return col;
             };
 
