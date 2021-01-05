@@ -7,9 +7,8 @@ Material:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: Shader Graphs_ToonLighting_PN
-  m_Shader: {fileID: -6465566751694194690, guid: 47bda04fa3b1b794e87bc908c976ae42,
-    type: 3}
+  m_Name: ShaderCourse_ToonLighting_AH
+  m_Shader: {fileID: 4800000, guid: fd32c6c04861b1b4ab05ace4f288adae, type: 3}
   m_ShaderKeywords: 
   m_LightmapFlags: 4
   m_EnableInstancingVariants: 0
@@ -20,13 +19,17 @@ Material:
   m_SavedProperties:
     serializedVersion: 3
     m_TexEnvs:
-    - Texture2D_D95382D0:
+    - _MainTex:
         m_Texture: {fileID: 10309, guid: 0000000000000000f000000000000000, type: 0}
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     m_Floats:
-    - Vector1_7593FB47: 0
+    - _GradientStrength: 0.13
+    - _HighlightThreshold: 0.88
+    - _LightThreshold: 0
     m_Colors:
-    - Color_1059E5B3: {r: 0.8490566, g: 0.7520128, b: 0.59674263, a: 1}
-    - Color_4C249243: {r: 0.17404267, g: 0.1501869, b: 0.4245283, a: 1}
-    - Vector3_B787B4E1: {r: 0.41, g: 0.64, b: -0.72, a: 0}
+    - _BrightColor: {r: 0.4433962, g: 0.4433962, b: 0.4433962, a: 1}
+    - _DarkColor: {r: 0.2264151, g: 0.2264151, b: 0.2264151, a: 1}
+    - _HighlightColor: {r: 1, g: 1, b: 1, a: 1}
+    - _LightThreshold: {r: 0.22, g: -0.55, b: 0.51, a: 0.36}
+    - _SunDirection: {r: 0.54, g: 1.27, b: -0.8, a: 0}
