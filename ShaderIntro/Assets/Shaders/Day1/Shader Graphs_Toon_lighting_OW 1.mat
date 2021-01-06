@@ -1,0 +1,41 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!21 &2100000
+Material:
+  serializedVersion: 6
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_Name: Shader Graphs_Toon_lighting_OW 1
+  m_Shader: {fileID: 4800000, guid: f3f03e5ba47069e44b1ce069b37a8e67, type: 3}
+  m_ShaderKeywords: 
+  m_LightmapFlags: 4
+  m_EnableInstancingVariants: 0
+  m_DoubleSidedGI: 0
+  m_CustomRenderQueue: -1
+  stringTagMap: {}
+  disabledShaderPasses: []
+  m_SavedProperties:
+    serializedVersion: 3
+    m_TexEnvs:
+    - Texture2D_4F943F4A:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - _MainTex:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 0, y: 1}
+        m_Offset: {x: 0, y: 0}
+    m_Floats:
+    - Vector1_BB5015A9: 0
+    - _LightTreshhold: 0
+    - _Value: 1
+    m_Colors:
+    - Color_45086532: {r: 1, g: 1, b: 1, a: 1}
+    - Color_691B0409: {r: 0.22641507, g: 0.22641507, b: 0.22641507, a: 1}
+    - Vector3_40D864B: {r: 0.57, g: 0.69, b: -0.66, a: 0}
+    - _BrightColor: {r: 0.6886792, g: 0.59397006, b: 0.38007298, a: 1}
+    - _Color: {r: 1, g: 1, b: 1, a: 1}
+    - _DarkColor: {r: 0.20754719, g: 0.16944925, b: 0.036222856, a: 1}
+    - _SunDirection: {r: 157.96, g: 196.7, b: -180, a: 0}
