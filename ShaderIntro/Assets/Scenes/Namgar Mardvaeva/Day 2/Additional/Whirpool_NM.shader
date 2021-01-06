@@ -1,10 +1,10 @@
 ﻿Shader "Unlit/Whirpool_NM"
 {
-    Properties
+    /*Properties
     {
         _MainTex ("Texture", 2D) = "white" {}
         _Speed("Speed", Float) = 2
-        _Time("Time", Vector) = (0,1, 0,0)
+        _Time("Time", Vector) = (0,1,0)
     }
     SubShader
     {
@@ -76,5 +76,5 @@
             }
             ENDCG
         }
-    }
+    }*/
 }
