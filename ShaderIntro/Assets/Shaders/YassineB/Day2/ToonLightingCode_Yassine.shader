@@ -23,7 +23,7 @@
     }
     SubShader
     {
-        Tags 
+        Tags
         { 
             "RenderType"="Opaque"
             "LightMode" = "UniversalForward"
@@ -39,12 +39,8 @@
             CGPROGRAM
             #pragma vertex Vertexshader
             #pragma fragment FragmentShader
-            // make fog work
-            #pragma multi_compile_fog
 
-            //#pragma multi_compile_shadowcaster
-            //#pragma multi_compile_fwd_base
-            #pragma multi_compile _ _MAIN_LIGHT_SHADOWS
+            #pragma multi_compile_fwd_base
 
             #include "UnityCG.cginc"
             #include "Lighting.cginc"
@@ -97,9 +93,6 @@
                 //Convert the normal into world normal, and calculate the dot product of that
                 float3 normal = normalize(vertexToFragment.worldNormal);
                 float DotProductLightAndNormal = dot(_WorldSpaceLightPos0, normal);
-                
-                //Object either light or dark, clamp the other stuff
-                //float lightIntensity = DotProductLightAndNormal > 0 ? 1 : 0;
                 
                 //Include casted shadows
                 float shadow = SHADOW_ATTENUATION(vertexToFragment);
