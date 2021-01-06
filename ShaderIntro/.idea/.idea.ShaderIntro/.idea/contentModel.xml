@@ -11,6 +11,11 @@
           <e p="Day 2" t="Include">
             <e p="SimpleToonTwo.shader" t="Include" />
           </e>
+          <e p="Day 3" t="Include">
+            <e p="FireEffect.shader" t="Include" />
+            <e p="FireExperiment.shader" t="Include" />
+            <e p="Transparency.shader" t="Include" />
+          </e>
         </e>
         <e p="Scripts" t="Include">
           <e p="SimpleCameraController.cs" t="Include" />

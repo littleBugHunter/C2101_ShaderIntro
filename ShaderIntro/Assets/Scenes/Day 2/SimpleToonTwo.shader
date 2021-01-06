@@ -12,6 +12,7 @@ Shader "ShaderCourse/SimpleToonTwo"
         _LightTreshold ("Light Treshold", Float) = 0 
         _Brightcolor ("Bright Color", Color) = (1,1,1,1)
         _Darkcolor ("Dark Color", Color) = (0,0,0,0)
+       
     } 
     SubShader
     {
@@ -46,6 +47,7 @@ Shader "ShaderCourse/SimpleToonTwo"
             float _LightTreshold;
             float3 _Brightcolor;
             float3 _Darkcolor;
+            
 
             VertexToFragment VertexShader_ ( VertexData vertexData )
             {
