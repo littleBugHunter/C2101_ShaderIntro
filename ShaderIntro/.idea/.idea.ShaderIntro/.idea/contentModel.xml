@@ -14,7 +14,15 @@
           <e p="DeviceContext" t="Include">
             <e p="DeviceContext.shader" t="Include" />
           </e>
-          <e p="Template.shader" t="Include" />
+          <e p="LP" t="Include">
+            <e p="Day2" t="Include">
+              <e p="ToonShader.shader" t="Include" />
+            </e>
+            <e p="Day3" t="Include">
+              <e p="TransparentTest_LP.shader" t="Include" />
+            </e>
+            <e p="Template.shader" t="Include" />
+          </e>
         </e>
         <e p="TutorialInfo" t="Include">
           <e p="Scripts" t="Include">
