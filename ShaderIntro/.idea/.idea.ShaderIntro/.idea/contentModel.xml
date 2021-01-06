@@ -15,6 +15,9 @@
             <e p="ToonLighting_PN.shader" t="Include" />
             <e p="UvMappingCodeExamples.shader" t="Include" />
           </e>
+          <e p="Day3" t="Include">
+            <e p="Transparent_PN.shader" t="Include" />
+          </e>
           <e p="DeviceContext" t="Include">
             <e p="DeviceContext.shader" t="Include" />
           </e>
