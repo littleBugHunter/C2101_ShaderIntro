@@ -91,5 +91,5 @@ Material:
     - _DarkColor: {r: 0.31132078, g: 0.09447628, b: 0.09251513, a: 1}
     - _EmissionColor: {r: 0, g: 0, b: 0, a: 1}
     - _SpecColor: {r: 0.19999996, g: 0.19999996, b: 0.19999996, a: 1}
-    - _SunDirection: {r: -2.41, g: 2.97, b: 3.54, a: 0}
+    - _SunDirection: {r: -6.87, g: 2.97, b: 3.54, a: 0}
     - _SundDirection: {r: -1.15, g: 1, b: 0, a: 0}

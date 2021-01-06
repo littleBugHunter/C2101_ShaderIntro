@@ -63,10 +63,9 @@
             float4 FragmentShader (VertexToFragment vertexToFragment) : SV_Target
             {
                 float3 normal = normalize(vertexToFragment.normal);
-		_SunDirection = normalize(_SunDirection);
-		float dotProduct = dot(normal,_SunDirection);
+				_SunDirection = normalize(_SunDirection);
+				float dotProduct = dot(normal,_SunDirection);
 		
-	
 	
 		float3 lightColor;
 		if(dotProduct > _LightTreshhold){

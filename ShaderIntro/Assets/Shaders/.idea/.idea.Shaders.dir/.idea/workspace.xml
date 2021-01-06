@@ -1,21 +1,21 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="afc2fcd2-11ab-4828-9f09-c1fe0cd6a804" name="Default Changelist" comment="" />
+    <list default="true" id="04eee2b3-e273-42c9-ae2f-8c93c6de451d" name="Default Changelist" comment="" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
   <component name="Git.Settings">
-    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/../../../.." />
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/../../.." />
   </component>
   <component name="IdeDocumentHistory">
     <changedPaths>
-      <option value="$PROJECT_DIR$/ToonSahderCode_IB_2.shader" />
+      <option value="$PROJECT_DIR$/Day3_IB/Transperent_IB.shader" />
     </changedPaths>
   </component>
-  <component name="ProjectId" id="1meTeWS3nAfaRRlGf6e4rt1SpX2" />
+  <component name="ProjectId" id="1mgzux19AHdHNEhkW52GfoVcCZt" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
@@ -30,21 +30,19 @@
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
-      <changelist id="afc2fcd2-11ab-4828-9f09-c1fe0cd6a804" name="Default Changelist" comment="" />
-      <created>1609853175765</created>
+      <changelist id="04eee2b3-e273-42c9-ae2f-8c93c6de451d" name="Default Changelist" comment="" />
+      <created>1609930258321</created>
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
-      <updated>1609853175765</updated>
-      <workItem from="1609853195440" duration="612000" />
-      <workItem from="1609864751922" duration="43000" />
-      <workItem from="1609864836087" duration="963000" />
+      <updated>1609930258321</updated>
+      <workItem from="1609930271748" duration="934000" />
     </task>
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
   </component>
-  <component name="UnityProjectConfiguration" hasMinimizedUI="false" />
+  <component name="UnityProjectConfiguration" hasMinimizedUI="null" />
   <component name="UnityUnitTestConfiguration" currentTestLauncher="NUnit" />
   <component name="VcsManagerConfiguration">
     <option name="CLEAR_INITIAL_COMMIT_MESSAGE" value="true" />
