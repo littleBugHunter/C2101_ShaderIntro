@@ -14,10 +14,13 @@
           <e p="Day2" t="Include">
             <e p="Toon_EN.shader" t="Include" />
           </e>
+          <e p="Day3" t="Include">
+            <e p="Transparent_EN.shader" t="Include" />
+          </e>
           <e p="DeviceContext" t="Include">
             <e p="DeviceContext.shader" t="Include" />
           </e>
-          <e p="Template.shader" t="Include" />
+          <e p="Template_EN.shader" t="Include" />
         </e>
         <e p="TutorialInfo" t="Include">
           <e p="Scripts" t="Include">

@@ -1,12 +1,10 @@
-﻿
-Shader "ShaderCourse/Template"
+﻿Shader "Unlit/TemplateEN"
 {
-    //UI of the Shader
     Properties
     {
         _MainTex ("Texture", 2D) = "white" {}
-        _Color ("A Color", Color) = (1,1,1,1)
-        _Value ("A Value", Float) = 1
+        _Color ("Color", Color) = (1,1,1,1)
+        _Value ("Value", Float) = 1
     }
     SubShader
     {
@@ -17,7 +15,7 @@ Shader "ShaderCourse/Template"
         {
             CGPROGRAM
             #pragma vertex VertexShader_
-            #pragma fragment FragmentShader
+            #pragma fragment FragmentShader_
 
             #include "UnityCG.cginc"
 
@@ -31,6 +29,7 @@ Shader "ShaderCourse/Template"
             struct VertexToFragment
             {
                 float4 position : SV_POSITION;
+                float3 normal   : NORMAL;
                 float2 uv     : TEXCOORD0;
             };
 
@@ -39,19 +38,17 @@ Shader "ShaderCourse/Template"
 
             VertexToFragment VertexShader_ ( VertexData vertexData )
             {
-                VertexToFragment output;
-                output.position = UnityObjectToClipPos(vertexData.position);
-                output.uv = vertexData.uv;
-                return output;
+                VertexToFragment vertexToFragment;
+                vertexToFragment.position = UnityObjectToClipPos(vertexData.position);
+                vertexToFragment.normal = vertexData.normal;
+                vertexToFragment.uv = vertexData.uv;
+                return vertexToFragment;
             }
             
-            // GPU IS DOING THINGS WITH THE DATA
-            
-            float4 FragmentShader (VertexToFragment vertexToFragment) : SV_Target
+            float4 FragmentShader_ (VertexToFragment vertexToFragment) : SV_Target
             {
-                // sample the texture
-                fixed4 col = tex2D(_MainTex, vertexToFragment.uv);
-                return col;
+                float4 color = tex2D(_MainTex, vertexToFragment.uv);
+                return color;
             }
             ENDCG
         }
