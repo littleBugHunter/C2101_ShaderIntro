@@ -13,6 +13,7 @@
   <component name="IdeDocumentHistory">
     <changedPaths>
       <option value="$PROJECT_DIR$/Day3_IB/Transperent_IB.shader" />
+      <option value="$PROJECT_DIR$/Day4_IB/DisplayemenMapping_IB.shader" />
     </changedPaths>
   </component>
   <component name="ProjectId" id="1mgzux19AHdHNEhkW52GfoVcCZt" />
@@ -36,13 +37,14 @@
       <option name="presentableId" value="Default" />
       <updated>1609930258321</updated>
       <workItem from="1609930271748" duration="934000" />
+      <workItem from="1610014625638" duration="1198000" />
     </task>
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
   </component>
-  <component name="UnityProjectConfiguration" hasMinimizedUI="null" />
+  <component name="UnityProjectConfiguration" hasMinimizedUI="false" />
   <component name="UnityUnitTestConfiguration" currentTestLauncher="NUnit" />
   <component name="VcsManagerConfiguration">
     <option name="CLEAR_INITIAL_COMMIT_MESSAGE" value="true" />

@@ -7,7 +7,7 @@ Material:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: dfg
+  m_Name: Fire1
   m_Shader: {fileID: -6465566751694194690, guid: 42104674b8a50bf46a81c938fcd20d5a,
     type: 3}
   m_ShaderKeywords: 
@@ -25,12 +25,14 @@ Material:
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     m_Floats:
-    - Vector1_3403C289: 0
+    - Vector1_3403C289: 0.199
     - Vector1_4208BD6B: 0
     - Vector1_5CFC81BD: 1
-    - Vector1_A3EC8266: 0.38
-    - Vector1_BB1A3A0F: 2.23
-    - Vector1_DE54184B: 0
+    - Vector1_7C18F595: 0.021
+    - Vector1_A3EC8266: 0.22
+    - Vector1_BB1A3A0F: 10
+    - Vector1_BD40A0F: 0.29
+    - Vector1_DE54184B: 0.109
     m_Colors:
-    - Color_535327FF: {r: 2.941112, g: 0, b: 0, a: 1}
+    - Color_535327FF: {r: 3.926616, g: 0.3382421, b: 0, a: 1}
     - Vector2_3397995A: {r: -1.47, g: 0.46, b: 0.01, a: -0.55}
