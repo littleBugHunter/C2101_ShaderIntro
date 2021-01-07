@@ -70,6 +70,7 @@ Shader "ShaderCourse/FireShader"
 					output.position = UnityObjectToClipPos(vertexData.position);
 				}
 
+				//doesn't really work as intended yet
 				if(output.position.y < 0)
 					output.position += _WindDir;
 
