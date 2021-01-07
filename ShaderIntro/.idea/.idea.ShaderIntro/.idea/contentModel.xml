@@ -16,12 +16,16 @@
             <e p="UvMappingCodeExamples.shader" t="Include" />
           </e>
           <e p="Day3" t="Include">
+            <e p="FireEffects_PN.shader" t="Include" />
             <e p="Transparent_PN.shader" t="Include" />
+          </e>
+          <e p="Day4" t="Include">
+            <e p="DisplacementMapping_PN.shader" t="Include" />
           </e>
           <e p="DeviceContext" t="Include">
             <e p="DeviceContext.shader" t="Include" />
           </e>
-          <e p="Template.shader" t="Include" />
+          <e p="Template_PN.shader" t="Include" />
         </e>
         <e p="TutorialInfo" t="Include">
           <e p="Scripts" t="Include">
