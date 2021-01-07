@@ -1,5 +1,5 @@
 ﻿
-Shader "ShaderCourse/Template"
+Shader "ShaderCourse/ToonShader_K"
 {
     //UI of the Shader
     Properties

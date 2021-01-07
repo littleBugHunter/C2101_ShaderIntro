@@ -1,4 +1,4 @@
-﻿Shader "Unlit/ToonLightingCode"
+﻿Shader "Unlit/ToonLightingCode_K"
 {
     //UI of the Shader
     Properties
