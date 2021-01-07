@@ -33,7 +33,7 @@ Material:
         m_Offset: {x: 0, y: 0}
     m_Floats:
     - _ScrollSpeed: 0.4
-    - _Threshold: 0.448
-    - _smoothness: 0.408
+    - _Threshold: 0.584
+    - _smoothness: 0.571
     m_Colors:
     - _Color: {r: 1, g: 0.4239883, b: 0, a: 1}

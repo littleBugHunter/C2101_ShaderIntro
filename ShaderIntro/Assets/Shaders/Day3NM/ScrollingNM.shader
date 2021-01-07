@@ -79,7 +79,7 @@ Shader "ShaderCourse/ScrollingNM"
                 float combined = maskCol.x * noiseCol.x;
                 float sharpendResult = inverseLerp(combined , _Threshold - _smoothness,_Threshold + _smoothness);
                 sharpendResult = saturate(sharpendResult);
-                return sharpendResult * _Color + sharpendResult + (sharpendResult + _Color);
+                return sharpendResult * _Color ;
                 
                 
             }
