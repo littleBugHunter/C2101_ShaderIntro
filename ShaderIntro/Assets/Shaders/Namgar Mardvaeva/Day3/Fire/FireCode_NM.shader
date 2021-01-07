@@ -77,9 +77,10 @@
                 float4 FragmentShader(VertexToFragment vertexToFragment) : SV_Target
                 {
                     // Displacement mapping
-                    float3 normal = normalize(vertexToFragment.normal);
+                    //float3 normal = normalize(vertexToFragment.normal);
                     // Multiply with gradient noise
-                    
+                    //float multiplied = _GradientTex.x * normal.x;
+
 
                     //
                     float2 uv = vertexToFragment.uv;
