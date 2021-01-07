@@ -17,7 +17,7 @@
             Tags { "RenderType" = "Opaque" "Queue" = "Transparent"}
             LOD 100
             ZWrite Off
-            Blend One One // Additive Blending 
+            Blend OneMinusDstColor One // Additive Blending 
 
             Pass
             {

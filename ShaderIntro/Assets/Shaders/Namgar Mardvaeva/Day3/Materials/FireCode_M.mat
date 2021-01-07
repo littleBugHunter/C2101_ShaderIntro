@@ -20,7 +20,7 @@ Material:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: FirecampCode_M
+  m_Name: FireCode_M
   m_Shader: {fileID: 4800000, guid: b169e7af990845942889e8ff00b01322, type: 3}
   m_ShaderKeywords: 
   m_LightmapFlags: 4

@@ -1,4 +1,4 @@
-﻿Shader "ShaderCourse/TransparentTest"
+﻿Shader "ShaderCourse/Transparent_NM"
 {
     //UI of the Shader
     Properties
@@ -6,10 +6,6 @@
         _MainTex("Texture", 2D) = "white" {}
         _Color("A Color", Color) = (1,1,1,1)
         _Value("A Value", Float) = 1
-        _SunDirection("Sun Direction", Vector) = (0, 1, 0, 0)
-        _LightThreshold("Light Threshold", Float) = 0
-        _BrightColor("Bright Color", Color) = (1,1,1, 1)
-        _DarkColor("Dark Color", Color) = (0,0,0, 1)
     }
         SubShader
         {
@@ -42,12 +38,6 @@
 
                 sampler2D _MainTex;
                 float4 _MainTex_ST;
-                float3 _SunDirection;
-                float _LightThreshold;
-
-                // Colors declaration
-                float3 _BrightColor;
-                float3 _DarkColor;
 
                 VertexToFragment VertexShader_(VertexData vertexData)
                 {
@@ -62,24 +52,9 @@
 
                 float4 FragmentShader(VertexToFragment vertexToFragment) : SV_Target
                 {
-                    float3 normal = normalize(vertexToFragment.normal);
-                    _SunDirection = normalize(_SunDirection);
-                    float dotProduct = dot(normal, _SunDirection);
-                    //return dotProduct;
-
-                    float3 lightColor;
-                    // Comparison
-                    if (dotProduct > _LightThreshold) {
-                        lightColor = _BrightColor;
-                    }
-                    else {
-                        lightColor = _DarkColor;
-                    }
-
                     // sample the texture
-                    float3 texCol = tex2D(_MainTex, vertexToFragment.uv);
-                    float3 col = texCol * lightColor;
-                    return float4(col, 1); // casting, basically
+                    float4 texCol = tex2D(_MainTex, vertexToFragment.uv);
+                    return texCol; // casting, basically
                 }
                 ENDCG
             }
