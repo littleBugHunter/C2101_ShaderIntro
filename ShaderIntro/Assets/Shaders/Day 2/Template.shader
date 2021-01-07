@@ -51,6 +51,7 @@ Shader "ShaderCourse/Trans"
             {
                 // sample the texture
                 fixed4 col = tex2D(_MainTex, vertexToFragment.uv);
+                
                 return col;
             }
             ENDCG
