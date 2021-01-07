@@ -7,9 +7,8 @@ Material:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: Shader Graphs_ColorRamp_PN
-  m_Shader: {fileID: -6465566751694194690, guid: d2df06ad1ae020347b1f6ed52d18f7c5,
-    type: 3}
+  m_Name: Unlit_Transparent_LI
+  m_Shader: {fileID: 4800000, guid: 3c0def9e88f923c439a0c52e19906675, type: 3}
   m_ShaderKeywords: 
   m_LightmapFlags: 4
   m_EnableInstancingVariants: 0
@@ -20,10 +19,11 @@ Material:
   m_SavedProperties:
     serializedVersion: 3
     m_TexEnvs:
-    - Texture2D_5F062186:
-        m_Texture: {fileID: 2800000, guid: 59310bd1b7139aa4c8a0272dbaf5d204, type: 3}
+    - _MainTex:
+        m_Texture: {fileID: 0}
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     m_Floats:
-    - Vector1_A4C3CF6D: 0.28
-    m_Colors: []
+    - _Value: 1
+    m_Colors:
+    - _Color: {r: 1, g: 1, b: 1, a: 1}

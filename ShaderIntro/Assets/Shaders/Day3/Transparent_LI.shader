@@ -1,12 +1,15 @@
 ﻿Shader "Unlit/Transparent_LI"
 {
+
     Properties
     {
         _MainTex ("Texture", 2D) = "white" {}
+        _Color("A Color", Color) = (1,1,1,1)
+        _Value("A Value", Float) = 1
     }
     SubShader
     {
-        Tags { "RenderType"="Opaque" "Queue"="Transparent" }
+        Tags { "RenderType" = "Opaque" "Queue" = "Transparent" }
         LOD 100
         ZWrite Off
         Blend One One
@@ -16,8 +19,6 @@
             CGPROGRAM
             #pragma vertex vert
             #pragma fragment frag
-            // make fog work
-            #pragma multi_compile_fog
 
             #include "UnityCG.cginc"
 
