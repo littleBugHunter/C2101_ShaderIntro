@@ -52,10 +52,15 @@
                 VertexToFragment VertexShader_(VertexData vertexData) /*object space*/
                 {
                     VertexToFragment output;
+                    float3 worldNormal = mul(UNITY_MATRIX_M, vertexData.normal);
+                    float4 worldPosition = mul(UNITY_MATRIX_M, vertexData.position);
+                    worldPosition.xy += vertexData.uv;
+                    output.position = mul(UNITY_MATRIX_VP, worldPosition);
+                    /*VertexToFragment output;
                     float4 worldSpacePosition = mul(UNITY_MATRIX_M, vertexData.position)
-                        worldSpacePosition.xyz += float3(0, 1, 0);
-                    output.position = mul(UNITY_MATRIX_VP, vertexData.position); //UnityObjectToClipPos(vertexData.position); // it is 55, mu; 
-                    output.normal = vertexData.normal;
+                    worldSpacePosition.xyz += float3(0, 1, 0);
+                    output.position = mul(UNITY_MATRIX_VP, vertexData.position); //UnityObjectToClipPos(vertexData.position);  
+                    output.normal = vertexData.normal;*/
                     output.uv = vertexData.uv;
                     return output;
                 }

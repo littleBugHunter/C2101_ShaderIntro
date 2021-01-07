@@ -40,7 +40,8 @@ Shader "ShaderCourse/DispMap"
 
             VertexToFragment VertexShader_ ( VertexData vertexData )
             {
-                VertexToFragment output;
+                // First ver for texture
+                /*VertexToFragment output;
                 float3 worldNormal = mul(UNITY_MATRIX_M, vertexData.normal);//being applied only in world space
                 float4 worldPosition = mul(UNITY_MATRIX_M, vertexData.normal);
 
@@ -59,9 +60,11 @@ Shader "ShaderCourse/DispMap"
 
                 // But changing this is cleaner, also, saves computing power
                 output.position = mul(UNITY_MATRIX_VP, objectSpaceDisplacedPosition);//UnityObjectToClipPos(vertexData.position);
-                output.normal = vertexData.normal;
+                //output.normal = vertexData.normal;
                 output.uv = vertexData.uv;
-                return output; 
+                return output; */
+
+                // Second ver for sm more 
             }
             
             // GPU IS DOING THINGS WITH THE DATA
