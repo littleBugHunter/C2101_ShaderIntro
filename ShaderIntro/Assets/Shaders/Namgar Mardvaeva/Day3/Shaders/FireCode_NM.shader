@@ -49,10 +49,12 @@
                 float4 _Color;
                 float _Smoothness;
 
-                VertexToFragment VertexShader_(VertexData vertexData)
+                VertexToFragment VertexShader_(VertexData vertexData) /*object space*/
                 {
                     VertexToFragment output;
-                    output.position = UnityObjectToClipPos(vertexData.position);
+                    float4 worldSpacePosition = mul(UNITY_MATRIX_M, vertexData.position)
+                        worldSpacePosition.xyz += float3(0, 1, 0);
+                    output.position = mul(UNITY_MATRIX_VP, vertexData.position); //UnityObjectToClipPos(vertexData.position); // it is 55, mu; 
                     output.normal = vertexData.normal;
                     output.uv = vertexData.uv;
                     return output;
