@@ -1,6 +1,6 @@
 %YAML 1.1
 %TAG !u! tag:unity3d.com,2011:
---- !u!114 &-4594427258425938302
+--- !u!114 &-7291520494289263103
 MonoBehaviour:
   m_ObjectHideFlags: 11
   m_CorrespondingSourceObject: {fileID: 0}
@@ -20,8 +20,8 @@ Material:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: Dissolve
-  m_Shader: {fileID: -6465566751694194690, guid: 0a14db3176f7da94081efdca768ea10f,
+  m_Name: GrassLit
+  m_Shader: {fileID: -6465566751694194690, guid: 22ae68bb042b61a4aa6a3d87c2af1371,
     type: 3}
   m_ShaderKeywords: 
   m_LightmapFlags: 4
@@ -33,12 +33,24 @@ Material:
   m_SavedProperties:
     serializedVersion: 3
     m_TexEnvs:
-    - Texture2D_8C77C598:
+    - Texture2D_1929EE22:
+        m_Texture: {fileID: 2800000, guid: a1ad402a3f043ef459645191c8422926, type: 3}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - Texture2D_2C521E8E:
         m_Texture: {fileID: 0}
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
-    - Texture2D_94659363:
+    - Texture2D_80AD26EE:
+        m_Texture: {fileID: 2800000, guid: 19d7ac03e7bce7740acc48fb95f2215f, type: 3}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - Texture2D_C691AE24:
         m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - Texture2D_E23C91A7:
+        m_Texture: {fileID: 2800000, guid: d6cdc79ec19714fcd980ca3f6ac01a0a, type: 3}
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     - _BaseMap:
@@ -69,14 +81,14 @@ Material:
         m_Texture: {fileID: 0}
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
-    - _Texture2DAsset_3493C62_Out_0:
-        m_Texture: {fileID: 0}
-        m_Scale: {x: 1, y: 1}
-        m_Offset: {x: 0, y: 0}
     m_Floats:
-    - Vector1_1C8E883F: 1
-    - Vector1_81610508: 0.05
-    - Vector1_A898CCBE: 1
+    - Vector1_44974CE0: 1
+    - Vector1_4BB6ABA6: 4
+    - Vector1_7992EC20: 0.2
+    - Vector1_8411CEB6: 0.4
+    - Vector1_D1ED0EA8: 0.6
+    - Vector1_D9648051: 1
+    - Vector1_E96EBC29: 1
     - _AlphaClip: 0
     - _Blend: 0
     - _BumpScale: 1
@@ -99,8 +111,7 @@ Material:
     - _WorkflowMode: 1
     - _ZWrite: 1
     m_Colors:
-    - Color_438F22C4: {r: 0, g: 0, b: 0, a: 1}
-    - Color_543027CD: {r: 3.823106, g: 0, b: 30.36794, a: 1}
+    - Vector2_A5E84487: {r: 1, g: 1, b: 0, a: 0}
     - _BaseColor: {r: 1, g: 1, b: 1, a: 1}
     - _Color: {r: 1, g: 1, b: 1, a: 1}
     - _EmissionColor: {r: 0, g: 0, b: 0, a: 1}
