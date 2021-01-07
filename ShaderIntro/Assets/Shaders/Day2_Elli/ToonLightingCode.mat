@@ -21,7 +21,8 @@ Material:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_Name: ToonLightingCode
-  m_Shader: {fileID: 4800000, guid: f645b6f3426c30642b7b45cdb7c0be4d, type: 3}
+  m_Shader: {fileID: -6465566751694194690, guid: 3eb6255a688a4d348839bedf5b575c10,
+    type: 3}
   m_ShaderKeywords: 
   m_LightmapFlags: 0
   m_EnableInstancingVariants: 0
@@ -32,15 +33,25 @@ Material:
   m_SavedProperties:
     serializedVersion: 3
     m_TexEnvs:
+    - Texture2D_7B97F791:
+        m_Texture: {fileID: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - Texture2D_D5FB8290:
+        m_Texture: {fileID: 2800000, guid: 459cc072af9fb9449abc9925ccd701a5, type: 3}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
     - _MainTex:
         m_Texture: {fileID: 10309, guid: 0000000000000000f000000000000000, type: 0}
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     m_Floats:
+    - Vector1_8376EBDE: 0.05
     - _LightThreshold: 0.17
     - _Value: 25.93
     - _Valuer: 0.528
     m_Colors:
+    - Vector2_FFE916D8: {r: 0, g: 0, b: 0, a: 0}
     - _BrightColor: {r: 1, g: 0.91524184, b: 0.759434, a: 1}
     - _Color: {r: 0.97404873, g: 1, b: 0, a: 1}
     - _DarkColor: {r: 0.29004043, g: 0.28462085, b: 0.49056602, a: 1}
