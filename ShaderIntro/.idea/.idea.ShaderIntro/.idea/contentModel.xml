@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ContentModelStore">
-    <e p="C:\Users\paul_nasdalack\.Rider2019.3\system\extResources" t="IncludeRecursive" />
-    <e p="C:\Users\paul_nasdalack\.Rider2019.3\system\resharper-host\local\Transient\ReSharperHost\v193\SolutionCaches\_ShaderIntro.573846929.00" t="ExcludeRecursive" />
-    <e p="D:\courses\C2101_ShaderIntro\ShaderIntro" t="IncludeRecursive">
+    <e p="C:\Users\alexa\AppData\local\JetBrains\Rider2020.2\extResources" t="IncludeRecursive" />
+    <e p="C:\Users\alexa\AppData\local\JetBrains\Rider2020.2\resharper-host\local\Transient\Rider\v202\SolutionCaches\_ShaderIntro.-531258667.00" t="ExcludeRecursive" />
+    <e p="D:\Git Repositories\C2101_ShaderIntro\ShaderIntro" t="IncludeRecursive">
       <e p="Assembly-CSharp-Editor.csproj" t="IncludeRecursive" />
       <e p="Assembly-CSharp.csproj" t="IncludeRecursive" />
       <e p="Assets" t="Include">
@@ -11,17 +11,22 @@
           <e p="SimpleCameraController.cs" t="Include" />
         </e>
         <e p="Shaders" t="Include">
+          <e p="Day 2" t="Include">
+            <e p="Template.shader" t="Include" />
+            <e p="ToonLighting_AH.shader" t="Include" />
+          </e>
           <e p="Day2" t="Include">
             <e p="ToonLighting_PN.shader" t="Include" />
             <e p="UvMappingCodeExamples.shader" t="Include" />
           </e>
           <e p="Day3" t="Include">
-            <e p="Transparent_PN.shader" t="Include" />
+            <e p="Fire_AH.shader" t="Include" />
+            <e p="Transparent_AH 1.shader" t="Include" />
           </e>
           <e p="DeviceContext" t="Include">
             <e p="DeviceContext.shader" t="Include" />
           </e>
-          <e p="Template.shader" t="Include" />
+          <e p="Template_PN.shader" t="Include" />
         </e>
         <e p="TutorialInfo" t="Include">
           <e p="Scripts" t="Include">

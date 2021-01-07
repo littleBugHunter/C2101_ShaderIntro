@@ -1,5 +1,5 @@
 ﻿
-Shader "ShaderCourse/Template"
+Shader "ShaderCourse/Trans"
 {
     //UI of the Shader
     Properties
