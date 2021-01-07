@@ -27,8 +27,8 @@ Shader "ShaderCourse/Transparent"
 
             struct VertexData
             {
-                float4 position : POSITION;
-                float3 normal   : NORMAL;
+                float4 position : POSITION;//float4 for position
+                float3 normal   : NORMAL;//float 3 for direction
                 float2 uv       : TEXCOORD0;
             };
 
@@ -46,10 +46,14 @@ Shader "ShaderCourse/Transparent"
 			float4 _Color;
 			float _Smoothness;
 
-            VertexToFragment VertexShader_ ( VertexData vertexData )
+            VertexToFragment VertexShader_ ( VertexData vertexData ) //in object space
             {
                 VertexToFragment output;
+				//float4 worldSpacePosition = mul(UNITY_MATRIX_M, vertexData.position);
+
                 output.position = UnityObjectToClipPos(vertexData.position);
+				//model(world position) view(camera position inverted) projection(perspective)
+				//mul(MVP MATRIX, vertexData.position)
                 output.uv = vertexData.uv;
                 return output;
             }

@@ -7,8 +7,8 @@ Material:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: Shader Graphs_Fire
-  m_Shader: {fileID: -6465566751694194690, guid: 2b938d60188653b49823b85d6c2dcec3,
+  m_Name: Shader Graphs_Foliage
+  m_Shader: {fileID: -6465566751694194690, guid: 3e07dcbac30c65c4eb70cd01eece0590,
     type: 3}
   m_ShaderKeywords: 
   m_LightmapFlags: 4
@@ -19,11 +19,12 @@ Material:
   disabledShaderPasses: []
   m_SavedProperties:
     serializedVersion: 3
-    m_TexEnvs: []
+    m_TexEnvs:
+    - Texture2D_8DEAE300:
+        m_Texture: {fileID: 2800000, guid: 6f447d4a64155af47ae6a1cd5cb25231, type: 3}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
     m_Floats:
-    - Vector1_27C5A8B5: 1
-    - Vector1_70F2D491: 0.2
-    - Vector1_759F1C53: 7
-    - Vector1_7A672E24: 1
-    - Vector1_C7C24573: -0.5
+    - Vector1_5DC4B202: 0.1
+    - Vector1_6A9B60E5: 0
     m_Colors: []
