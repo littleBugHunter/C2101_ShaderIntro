@@ -88,7 +88,7 @@ Material:
     - Vector3_5DD5D4FD: {r: 0, g: 1, b: 0, a: 0}
     - Vector3_A41A30C8: {r: 1.85, g: -0.01, b: 0.54, a: 0}
     - WaterLevelNormal: {r: 0, g: 1, b: 0, a: 0}
-    - WaterLevelOrigin: {r: 0, g: 0, b: 0, a: 0}
+    - WaterLevelOrigin: {r: 0, g: 0.021, b: 0, a: 0}
     - _BaseColor: {r: 1, g: 1, b: 1, a: 1}
     - _Color: {r: 1, g: 1, b: 1, a: 1}
     - _EmissionColor: {r: 0, g: 0, b: 0, a: 1}
