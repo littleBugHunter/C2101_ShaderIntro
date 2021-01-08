@@ -45,7 +45,7 @@ Material:
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     - _GradientTex:
-        m_Texture: {fileID: 0}
+        m_Texture: {fileID: 2800000, guid: 4ec781f26ceba9d41a529b65d41ca33b, type: 3}
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     - _MainTex:
@@ -88,12 +88,12 @@ Material:
     - _QueueOffset: 0
     - _ReceiveShadows: 1
     - _ScrollSpeed: 1
-    - _Smoothness: 0.5
+    - _Smoothness: 0.1
     - _SmoothnessTextureChannel: 0
     - _SpecularHighlights: 1
     - _SrcBlend: 1
     - _Surface: 0
-    - _Threshold: 0.5
+    - _Threshold: 0.08
     - _WorkflowMode: 1
     - _ZWrite: 1
     m_Colors:

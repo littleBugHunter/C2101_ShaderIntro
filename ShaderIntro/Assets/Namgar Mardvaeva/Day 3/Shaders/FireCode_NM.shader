@@ -17,7 +17,7 @@
             Tags { "RenderType" = "Opaque" "Queue" = "Transparent"}
             LOD 100
             ZWrite Off
-            Blend OneMinusDstColor One // Additive Blending 
+            Blend One One // Blending 
 
             Pass
             {
@@ -51,17 +51,46 @@
 
                 VertexToFragment VertexShader_(VertexData vertexData) /*object space*/
                 {
+                    /*//
+                    float2 uv = vertexToFragment.uv;
+                    float2 scrolledUv = vertexToFragment.uv;
+                    // scrolling uv in y direction
+                    scrolledUv.y += _Time.y * -1 * _ScrollSpeed; // confusing
+                    
+                    // Remapping
+                    float4 maskCol = tex2D(_MaskTex, uv);
+                    float4 noiseCol = tex2D(_NoiseTex, scrolledUv);
+                    float combined = maskCol.x * noiseCol.x;
+                    float sharpenedResult = inverseLerp(combined, _Threshold - _Smoothness, _Smoothness + _Threshold);
+                    sharpenedResult = saturate(sharpenedResult);
+                    return sharpenedResult * _Color;*/
+
                     VertexToFragment output;
                     float3 worldNormal = mul(UNITY_MATRIX_M, vertexData.normal);
                     float4 worldPosition = mul(UNITY_MATRIX_M, vertexData.position);
-                    worldPosition.xy += vertexData.uv;
-                    output.position = mul(UNITY_MATRIX_VP, worldPosition);
-                    /*VertexToFragment output;
-                    float4 worldSpacePosition = mul(UNITY_MATRIX_M, vertexData.position)
-                    worldSpacePosition.xyz += float3(0, 1, 0);
-                    output.position = mul(UNITY_MATRIX_VP, vertexData.position); //UnityObjectToClipPos(vertexData.position);  
-                    output.normal = vertexData.normal;*/
-                    output.uv = vertexData.uv;
+
+                    float isFacingUp = dot(worldNormal, float3(0, 1, 0));
+                    isFacingUp = clamp(isFacingUp, 0, 1);
+                    float3 displacementDirection = worldNormal;
+
+                    // Scrolling of tex
+                    /*float scrollingSpeed = 1;
+                    float2 scrollingLength = (0, 0);
+                    scrollingLength.y = mul(scrollingSpeed, _Time.y);
+                    _NoiseTex.uv = vertexData.uv += scrollingLength;*/
+                    /*vertexData.uv += mul(1, _Time.y);
+                    float4 noiseTex = tex2D(_NoiseTex, vertexData.uv);
+                    output.uv = noiseTex.uv;*/
+
+                    //
+                    float4 displacementFactor = tex2Dlod(_NoiseTex, float4(vertexData.uv, 0, 0));
+                    displacementDirection *= (displacementFactor * isFacingUp);
+
+                    float4 displacedPosition = worldPosition;
+                    displacedPosition.xyz += displacementDirection;
+                    
+                    output.position = mul(UNITY_MATRIX_VP, displacedPosition);
+                    //output.uv = vertexData.uv;//totalUv;
                     return output;
                 }
 
