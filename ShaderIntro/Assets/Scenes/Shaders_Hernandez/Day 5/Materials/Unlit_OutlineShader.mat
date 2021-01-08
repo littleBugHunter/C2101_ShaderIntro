@@ -7,9 +7,8 @@ Material:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: InnerDarkness
-  m_Shader: {fileID: -6465566751694194690, guid: 40a73ebb208edc9488908313f0b7b18e,
-    type: 3}
+  m_Name: Unlit_OutlineShader
+  m_Shader: {fileID: 4800000, guid: 4204b9bc95c66e34c863ae4d7524e562, type: 3}
   m_ShaderKeywords: 
   m_LightmapFlags: 4
   m_EnableInstancingVariants: 0
@@ -20,5 +19,7 @@ Material:
   m_SavedProperties:
     serializedVersion: 3
     m_TexEnvs: []
-    m_Floats: []
-    m_Colors: []
+    m_Floats:
+    - _OutlineSize: 0.1
+    m_Colors:
+    - _OutlineColor: {r: 0.4092901, g: 0.12215203, b: 0.5754717, a: 1}

@@ -1,4 +1,4 @@
-﻿//Shader "Unlit/FireEffect"
+﻿
 Shader "ShaderCourse/FireEffect"
 {
     //UI of the Shader
