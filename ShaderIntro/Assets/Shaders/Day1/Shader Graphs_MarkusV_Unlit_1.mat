@@ -8,8 +8,7 @@ Material:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_Name: Shader Graphs_MarkusV_Unlit_1
-  m_Shader: {fileID: -6465566751694194690, guid: c4369eadae6ef474bb10d56d2d3e8bec,
-    type: 3}
+  m_Shader: {fileID: 4800000, guid: 400db9d99d1beb444aa048e93a91a173, type: 3}
   m_ShaderKeywords: 
   m_LightmapFlags: 4
   m_EnableInstancingVariants: 0
@@ -24,13 +23,23 @@ Material:
         m_Texture: {fileID: 10309, guid: 0000000000000000f000000000000000, type: 0}
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
+    - _MainTex:
+        m_Texture: {fileID: 10309, guid: 0000000000000000f000000000000000, type: 0}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
     m_Floats:
     - Vector1_C1CB82AC: 0.45
     - Vector1_D2445D93: 0.45
     - Vector1_D49FEB73: 0.99
+    - _LightThreshold: -0.08
+    - _Value: 1
     m_Colors:
     - Color_7257662: {r: 1, g: 1, b: 1, a: 0}
     - Color_74851A0E: {r: 0.4811321, g: 0, b: 0, a: 0}
     - Color_BDCB125: {r: 0.41509432, g: 0.41509432, b: 0.41509432, a: 0}
     - Color_EC382A2C: {r: 0.16981131, g: 0, b: 0, a: 0}
     - Vector3_6691656F: {r: 7.4, g: 18.28, b: -10, a: 0.18}
+    - _BrightColor: {r: 0.7169812, g: 0.7169812, b: 0.7169812, a: 1}
+    - _Color: {r: 0, g: 0, b: 0, a: 1}
+    - _DarkColor: {r: 0.3018868, g: 0.3018868, b: 0.3018868, a: 1}
+    - _SunDirection: {r: -0.14, g: 1, b: 0, a: 0}
