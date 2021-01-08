@@ -35,10 +35,12 @@ Shader "ShaderCourse/CodeExamples"
             };
 
 
-            VertexToFragment VertexShader_ ( VertexData vertexData )
+            VertexToFragment VertexShader_ ( VertexData vertexData /// <<< Object Space )
             {
                 VertexToFragment output;
-                output.position = UnityObjectToClipPos(vertexData.position);
+                float4 worldSpacePosition = mul(UNITY_MATRIX_M, vertexData.position);
+                worldSpacePosition.xyz += float3(0,1,0);
+                output.position = mul(UNITY_MATRIX_VP, worldSpacePosition);
                 output.uv = vertexData.uv;
                 return output;
             }
