@@ -1,19 +1,22 @@
-﻿Shader "Unlit/DisplayemenMapping_IB"
+﻿
+Shader "ShaderCourse/Template"
 {
-     //UI of the Shader
+    //UI of the Shader
     Properties
     {
-        _MainTex ("Texture", 2D) = "white" {}
-        _Color ("A Color", Color) = (1,1,1,1)
-        _Value ("A Value", Float) = 1
+        _OutlineSize ("Outline Size", Float)  =  0.1                                                                                     
+        _OutlineColor ("Outline Color", Color) = (0,0,0,1)
     }
     SubShader
     {
-        Tags { "RenderType"="Opaque" }
+        Tags { "RenderType"="Opaque" "Queue"="Geometry+100" }
         LOD 100
 
         Pass
         {
+            ZTest Greater //Less Equal
+            ZWrite Off
+            
             CGPROGRAM
             #pragma vertex VertexShader_
             #pragma fragment FragmentShader
@@ -36,21 +39,11 @@
             sampler2D _MainTex;
             float4 _MainTex_ST;
 
-            VertexToFragment VertexShader_ ( VertexData vertexData // << OBJECT SPACE)
+            float4 _OutlineColor;
+
+            VertexToFragment VertexShader_ ( VertexData vertexData )
             {
                 VertexToFragment output;
-                float3 worldNormal = mul(UNITY_MATRIX_M, vertexData.normal);
-                float4 worldPosition = mul(UNITY_MATRIX_M, vertexData.psoition);
-
-                float isFacingUp = dot(vertexData.normal, float3 (0,1,0));
-                
-                float3 displacementDirection = vertexData.normal;
-                float4 displayementFactor = text2Dlod(_MainTex, float4(vertexData.uv,0,0));
-                displacementDirection *= displacementFactor * isFacingUP;
-                
-                float4 displacedPosition = vertexData.position;
-                displacePosition.xyz += displacementDirection;
-                
                 output.position = UnityObjectToClipPos(vertexData.position);
                 output.uv = vertexData.uv;
                 return output;
@@ -61,8 +54,8 @@
             float4 FragmentShader (VertexToFragment vertexToFragment) : SV_Target
             {
                 // sample the texture
-                fixed4 col = tex2D(_MainTex, vertexToFragment.uv);
-                return col;
+                
+               return _OutlineColor;
             }
             ENDCG
         }

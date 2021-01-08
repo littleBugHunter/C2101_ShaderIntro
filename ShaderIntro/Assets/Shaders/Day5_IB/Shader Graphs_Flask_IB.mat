@@ -1,0 +1,36 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!21 &2100000
+Material:
+  serializedVersion: 6
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_Name: Shader Graphs_Flask_IB
+  m_Shader: {fileID: -6465566751694194690, guid: fcf13ee2a7f4cb1469c631668771d6a4,
+    type: 3}
+  m_ShaderKeywords: 
+  m_LightmapFlags: 4
+  m_EnableInstancingVariants: 0
+  m_DoubleSidedGI: 0
+  m_CustomRenderQueue: -1
+  stringTagMap: {}
+  disabledShaderPasses: []
+  m_SavedProperties:
+    serializedVersion: 3
+    m_TexEnvs: []
+    m_Floats:
+    - Vector1_32E943F6: 2.86
+    - Vector1_925A0AF0: 0
+    - Vector1_A1A64DAB: 0.77
+    - Vector1_BAB6F7E9: 0.755
+    - Vector1_F4F6E374: 0.39
+    m_Colors:
+    - Color_90750599: {r: 1, g: 0, b: 0, a: 0}
+    - Color_D85788BA: {r: 0.2652216, g: 0.21176468, b: 0.9607843, a: 0}
+    - Color_D85F2F3C: {r: 1, g: 0.015686274, b: 0.1139453, a: 0}
+    - Vector3_4CC77624: {r: 0.76, g: 0, b: 0, a: 0}
+    - Vector3_CC7D27FE: {r: -0.14, g: 1, b: 0, a: 0}
+    - Water_LVL_Normal: {r: -0.017145252, g: 0.9996954, b: 0.017751724, a: 0}
+    - Water_LVL_Origin: {r: 5.71, g: 1.5, b: 9.09, a: 0}
