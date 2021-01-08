@@ -9,6 +9,7 @@
       <e p="Assets" t="Include">
         <e p="Scripts" t="Include">
           <e p="SimpleCameraController.cs" t="Include" />
+          <e p="WaterShaderDriver.cs" t="Include" />
         </e>
         <e p="Shaders" t="Include">
           <e p="Day2" t="Include">
@@ -21,6 +22,11 @@
           </e>
           <e p="Day4" t="Include">
             <e p="DisplacementMapping_PN.shader" t="Include" />
+          </e>
+          <e p="Day5" t="Include">
+            <e p="Outline_Code_PN.shader" t="Include" />
+            <e p="ShowThroughWalls_PN.shader" t="Include" />
+            <e p="TransparentOccluder_PN.shader" t="Include" />
           </e>
           <e p="DeviceContext" t="Include">
             <e p="DeviceContext.shader" t="Include" />
