@@ -1,0 +1,56 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!21 &2100000
+Material:
+  serializedVersion: 6
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_Name: Lava
+  m_Shader: {fileID: -6465566751694194690, guid: 7eb0721b805d41c4eb895ebd5be3fd3c,
+    type: 3}
+  m_ShaderKeywords: 
+  m_LightmapFlags: 4
+  m_EnableInstancingVariants: 0
+  m_DoubleSidedGI: 0
+  m_CustomRenderQueue: -1
+  stringTagMap: {}
+  disabledShaderPasses: []
+  m_SavedProperties:
+    serializedVersion: 3
+    m_TexEnvs:
+    - Texture2D_62AA75FA:
+        m_Texture: {fileID: 2800000, guid: 4238456180abbac42b17f65cea64bbb1, type: 3}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - Texture2D_6EC385D5:
+        m_Texture: {fileID: 2800000, guid: b28cd12ea420991429e035bc68fadbb0, type: 3}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    m_Floats:
+    - Vector1_1F10C8E4: 0.5
+    - Vector1_56D3867E: 1.8
+    - Vector1_697874F9: 0.9
+    - Vector1_828442AA: 0.5
+    - Vector1_99CEFAB1: 30.52
+    - Vector1_AB5184BE: 1.71
+    - Vector1_B539C6B5: 0.3
+    - Vector1_C1FD45BC: 162
+    - Vector1_C4552907: 3.68
+    - Vector1_DDC90966: 0.96
+    - Vector1_E33E3D00: 1
+    - Vector1_E81A776B: 2.8
+    - Vector1_EED37D9F: 5000
+    - Vector1_F693DD75: 2
+    m_Colors:
+    - Color_61CD8E97: {r: 32, g: 27.332466, b: 0, a: 1}
+    - Color_96481214: {r: 512, g: 0, b: 6.0235295, a: 0}
+    - Color_FAA59BD1: {r: 76.150116, g: 3.823655, b: 0, a: 0}
+    - Vector2_17BA43F3: {r: 0, g: 0.03, b: 0, a: 0}
+    - Vector2_6D789BD9: {r: 0, g: 0.1, b: 0, a: 0}
+    - Vector2_83A4CC2D: {r: -0.01, g: 1.1, b: 0, a: 0}
+    - Vector2_9C83A711: {r: 0, g: 0.03, b: 0, a: 0}
+    - Vector2_B8629711: {r: 2, g: 2, b: 0, a: 0}
+    - Vector2_D03AA6A8: {r: 0, g: 0.02, b: 0, a: 0}
+    - Vector2_DA702542: {r: 0, g: 2, b: 0, a: 0}
