@@ -1,0 +1,5 @@
+sceneSetups:
+- path: C:/Users/User/Documents/H_DA/Perforce/DontDieAgain/main/Assets/Scenes/IlyaTestScene.unity
+  isLoaded: 1
+  isActive: 1
+  isSubScene: 0

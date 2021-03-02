@@ -1,0 +1,87 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1 &8381733295290396832
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 8381733295290396835}
+  - component: {fileID: 8381733295290396834}
+  - component: {fileID: 8381733295290396765}
+  m_Layer: 0
+  m_Name: BoardManager
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &8381733295290396835
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8381733295290396832}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &8381733295290396834
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8381733295290396832}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 91cb407d9547244459b16e4b4bde5c19, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  DungeonWidth: 50
+  DungeonHeight: 50
+  targetEndPosition: {x: 0, y: 0}
+  FloorTile: {fileID: 7568676542299863685, guid: 141a385d169c7ad4a948e48bce54edc7,
+    type: 3}
+  BlockedTile: {fileID: 6835551669075689312, guid: 260ce318ccfe4f24a8fff05cf050b6fe,
+    type: 3}
+  RoomTile: {fileID: 6835551669075689312, guid: f435a9e2087db0149ba21c4a5040da95,
+    type: 3}
+  AllowedEndDist: 4
+  correctDirProbability: 85
+  minCorridorLength: 3
+  maxCorridorLength: 5
+  RP: {fileID: 8381733295290396765}
+  maxWrongDirection: 1
+  numberOfAgents: 4
+  GenerateBlockedTilesDistance: 4
+  BlockedTiles: []
+--- !u!114 &8381733295290396765
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8381733295290396832}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8a1ab553dcbbbc448b70c240bcf93cf4, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  numberRooms: 12
+  minRoomWallSize: 4
+  maxRoomWallSize: 7
+  minDistFromStart: 10
+  minDistFromEnd: 10
+  startroomSize: 4
+  endroomSize: 5
+  PositionCandidates: []
+  Rooms: []
+  StartPos: {x: 0, y: 0}
+  EndPos: {x: 0, y: 0}
