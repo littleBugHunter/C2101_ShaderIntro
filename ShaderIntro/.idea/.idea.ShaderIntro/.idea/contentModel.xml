@@ -12,7 +12,6 @@
         </e>
         <e p="Shaders" t="Include">
           <e p="Day 2" t="Include">
-            <e p="Template.shader" t="Include" />
             <e p="ToonLighting_AH.shader" t="Include" />
           </e>
           <e p="Day2" t="Include">
@@ -21,7 +20,15 @@
           </e>
           <e p="Day3" t="Include">
             <e p="Fire_AH.shader" t="Include" />
+            <e p="FireEffects_PN.shader" t="Include" />
             <e p="Transparent_AH 1.shader" t="Include" />
+          </e>
+          <e p="Day4" t="Include">
+            <e p="DisplacementMapping_PN.shader" t="Include" />
+          </e>
+          <e p="Day5" t="Include">
+            <e p="Outline.shader" t="Include" />
+            <e p="Template.shader" t="Include" />
           </e>
           <e p="DeviceContext" t="Include">
             <e p="DeviceContext.shader" t="Include" />

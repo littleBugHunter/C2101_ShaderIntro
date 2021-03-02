@@ -10,13 +10,14 @@
         _ScrollSpeed("Flame Speed", Float) = 1    
         _Threshold("Threshold", Range(0,1)) = 0
         _Smoothness("Smoothness",Range(0,0.2))=0
+        _Scale("Scale",Range(1,10))=1
     }
     SubShader
     {
         Tags { "RenderType"="Opaque" "Queue"="Transparent" }
         LOD 100
         ZWrite Off
-        Blend One One
+        Blend SrcAlpha One
 
         Pass
         {
@@ -37,7 +38,6 @@
             {
                 float4 position : SV_POSITION;
                 float2 uv     : TEXCOORD0;
-                float3 normal : NORMAL ;
             };
 
             float4 _FireCoreColor;
@@ -47,6 +47,7 @@
             float _ScrollSpeed;
             float _Threshold;
             float _Smoothness;
+            float _Scale;
 
             VertexToFragment VertexShader_ ( VertexData vertexData )
             {
@@ -75,15 +76,20 @@
                 float4 r; //Return Value
                 float2 uv= vertexToFragment.uv;
                 float2 scrolledUv = uv;
-                scrolledUv.y = uv.y + _Time.y/20 * -1 * _ScrollSpeed;
-                // sample the texture
+                scrolledUv.y = uv.y + _Time.y * -1 * _ScrollSpeed; //Time.y is actual timer
+
+                //trying to scale the maske in y direction
+                //uv.y=remap(uv.y,0.5,1,0,1);
+
                 float4 maskCol= tex2D(_MaskTex, uv);
+                maskCol=pow(maskCol,_Scale);
                 float4 noiseCol = tex2D(_NoiseTex,scrolledUv);
+                
                 float combined = maskCol.x * noiseCol.x;
                 float sharpenedCombined = inverseLerp(combined,_Threshold-_Smoothness,_Threshold);
                 sharpenedCombined = saturate(sharpenedCombined);
                 r = sharpenedCombined*_FireMainColor;
-
+                r.a=maskCol.x;
                 return r;
                }
             ENDCG
