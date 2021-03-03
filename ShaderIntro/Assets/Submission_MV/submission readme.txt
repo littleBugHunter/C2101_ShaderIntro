@@ -17,10 +17,10 @@ Bitmap font generator: CBFG by codehead
 
 Font: CamingoCode from https://www.fontsquirrel.com/fonts/camingocode (http://creativecommons.org/licenses/by-nd/3.0/)
 
-Pixelate Shader Tutorial:
+Pixelate Shader Tutorial: (gleiche Technik um Albedo texture zu pixelaten bevor ich es in grayscales umwandel)
 https://www.youtube.com/watch?v=siiqnXA156Y (codemonkey in shadergraph)
 
-Scrolling Shader Tutorial:
+Scrolling Shader Tutorial: (für verständnis von UV displacements)
 https://www.grizzly-machine.com/entries/tutorial-looped-grid-scrolling-shader
 
 Lava Textures:
