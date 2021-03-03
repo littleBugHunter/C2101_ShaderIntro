@@ -7,10 +7,10 @@ I attempted to create a cyber/glitch-shader. (Reference Footage in: /Assets/Shad
 
 There are 2, very similar, variants of it.
 The main one:
---> /Assets/Shaders/LP/LP_GlitchLiquid
+--> /Assets/Shaders/LP/Assignment/LP_GlitchLiquid
 This is the one I mainly worked on and can be seen on the plane in the scene 'LP_ShaderShowcase' ( /Assets/Shaders/LP/..)
 
---> /Assets/Shaders/LP/LP_GlitchBall
+--> /Assets/Shaders/LP/Assignment/LP_GlitchBall
 This one uses the same foundation as the one above, though here it's made to work on a sphere.
 
 
