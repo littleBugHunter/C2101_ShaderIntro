@@ -94,7 +94,7 @@ Material:
     - _ZWrite: 1
     m_Colors:
     - Color_B6C8AD39: {r: 13.8868, g: 4.071521, b: 1.381409, a: 0}
-    - Vector3_B48C034B: {r: 1, g: 1, b: 1, a: 0}
+    - Vector3_B48C034B: {r: 0, g: 0.2, b: 0.75, a: 0}
     - _BaseColor: {r: 1, g: 1, b: 1, a: 1}
     - _Color: {r: 1, g: 1, b: 1, a: 1}
     - _EmissionColor: {r: 0, g: 0, b: 0, a: 1}
