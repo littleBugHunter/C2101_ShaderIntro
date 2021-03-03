@@ -25,12 +25,12 @@ Material:
     - Vector1_94B08B34: 5.74
     - Vector1_BF9E3196: 3.12
     - Vector1_C425BEFA: -0.16
-    - Vector1_D5D93F7: 0.36
+    - Vector1_D5D93F7: 0.382
     m_Colors:
     - Color_16B8BE1A: {r: 0, g: 0, b: 0, a: 1}
     - Color_6D99C5EB: {r: 0.5235849, g: 0.7258708, b: 1, a: 1}
     - Color_E0A71BFA: {r: 0, g: 0, b: 0, a: 1}
     - Vector3_11154103: {r: 0, g: 1, b: 0, a: 0}
     - Vector3_CDC0EEE8: {r: 0, g: 0, b: 0, a: 0}
-    - WaterLevelNormal: {r: -0.41825992, g: 0.9083274, b: 0, a: 0}
-    - WaterLevelOrigin: {r: 0.946, g: -0.179, b: -0.644, a: 0}
+    - WaterLevelNormal: {r: -1.76, g: 1.36, b: 0.15, a: 0}
+    - WaterLevelOrigin: {r: 0.57, g: 0.82, b: 0.69, a: 0}

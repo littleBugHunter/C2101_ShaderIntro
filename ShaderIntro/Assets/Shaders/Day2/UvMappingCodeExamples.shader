@@ -35,7 +35,7 @@ Shader "ShaderCourse/CodeExamples"
             };
 
 
-            VertexToFragment VertexShader_ ( VertexData vertexData /// <<< Object Space )
+            VertexToFragment VertexShader_ ( VertexData vertexData )
             {
                 VertexToFragment output;
                 float4 worldSpacePosition = mul(UNITY_MATRIX_M, vertexData.position);
@@ -50,7 +50,7 @@ Shader "ShaderCourse/CodeExamples"
             sampler2D _MainTex;
             sampler2D _DisplacementMap;
             float _DisplacementAmount;
-            float4 _Time; //just declare a _Time variable of type float4 to get the time values
+            //float4 _Time; //just declare a _Time variable of type float4 to get the time values
             
             float4 FragmentShader (VertexToFragment vertexToFragment) : SV_Target
             {
