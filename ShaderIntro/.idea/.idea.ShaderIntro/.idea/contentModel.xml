@@ -1,14 +1,35 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ContentModelStore">
-    <e p="C:\Users\Mömö\AppData\local\JetBrains\Rider2020.1\extResources" t="IncludeRecursive" />
-    <e p="C:\Users\Mömö\AppData\local\JetBrains\Rider2020.1\resharper-host\local\Transient\ReSharperHost\v201\SolutionCaches\_ShaderIntro.755788111.00" t="ExcludeRecursive" />
+    <e p="C:\Users\Mömö\AppData\Local\JetBrains\Rider2020.1\extResources" t="IncludeRecursive" />
+    <e p="C:\Users\Mömö\AppData\Local\JetBrains\Rider2020.1\resharper-host\Local\Transient\ReSharperHost\v201\SolutionCaches\_ShaderIntro.755788111.00" t="ExcludeRecursive" />
     <e p="D:\h_da\Semester 3\Electives\shader elective\git shader content\ShaderIntro" t="IncludeRecursive">
       <e p="Assembly-CSharp-Editor.csproj" t="IncludeRecursive" />
       <e p="Assembly-CSharp.csproj" t="IncludeRecursive" />
       <e p="Assets" t="Include">
-        <e p="Scenes" t="Include">
+        <e p="Scripts" t="Include">
+          <e p="SimpleCameraController.cs" t="Include" />
+          <e p="WaterShaderDriver.cs" t="Include" />
+        </e>
+        <e p="Shaders" t="Include">
+          <e p="Day2" t="Include">
+            <e p="ToonLighting_PN.shader" t="Include" />
+            <e p="UvMappingCodeExamples.shader" t="Include" />
+          </e>
+          <e p="Day3" t="Include">
+            <e p="FireEffects_PN.shader" t="Include" />
+            <e p="Transparent_PN.shader" t="Include" />
+          </e>
+          <e p="Day4" t="Include">
+            <e p="DisplacementMapping_PN.shader" t="Include" />
+          </e>
+          <e p="DeviceContext" t="Include">
+            <e p="DeviceContext.shader" t="Include" />
+          </e>
           <e p="Shaders_Hernandez" t="Include">
+            <e p="Assignment" t="Include">
+              <e p="DissolveUnlit.shader" t="Include" />
+            </e>
             <e p="Day 2" t="Include">
               <e p="SimpleToonTwo.shader" t="Include" />
             </e>
@@ -21,22 +42,35 @@
               <e p="Transparency.shader" t="Include" />
             </e>
             <e p="Day 5" t="Include">
+              <e p="Day5" t="Include">
+                <e p="Outline_Code_PN.shader" t="Include" />
+                <e p="ShowThroughWalls_PN.shader" t="Include" />
+                <e p="TransparentOccluder_PN.shader" t="Include" />
+              </e>
               <e p="Shader Code" t="Include">
+                <e p="2ndFireDisplacement.shader" t="Include" />
                 <e p="Fire with Displacement.shader" t="Include" />
                 <e p="FireWithGradient.shader" t="Include" />
                 <e p="OutlineShader.shader" t="Include" />
               </e>
             </e>
+            <e p="Practice (Not for Assignment))" t="Include">
+              <e p="4thShader.shader" t="Include" />
+              <e p="5thShader.shader" t="Include" />
+              <e p="6thShader.shader" t="Include" />
+              <e p="7thShader.shader" t="Include" />
+              <e p="8thShader.shader" t="Include" />
+              <e p="MouseGlow.cs" t="Include" />
+              <e p="Practice3.shader" t="Include" />
+              <e p="simpleLerp.shader" t="Include" />
+              <e p="Template" t="Include">
+                <e p="TemplateSimple.shader" t="Include" />
+              </e>
+              <e p="UnitlPractice2.shader" t="Include" />
+              <e p="UnlitPractice.shader" t="Include" />
+            </e>
           </e>
-        </e>
-        <e p="Scripts" t="Include">
-          <e p="SimpleCameraController.cs" t="Include" />
-        </e>
-        <e p="Shaders" t="Include">
-          <e p="DeviceContext" t="Include">
-            <e p="DeviceContext.shader" t="Include" />
-          </e>
-          <e p="Template.shader" t="Include" />
+          <e p="Template_PN.shader" t="Include" />
         </e>
         <e p="TutorialInfo" t="Include">
           <e p="Scripts" t="Include">
@@ -48,7 +82,7 @@
         </e>
       </e>
       <e p="obj" t="ExcludeRecursive" />
-      <e p="packages" t="ExcludeRecursive" />
+      <e p="Packages" t="ExcludeRecursive" />
       <e p="ShaderIntro.sln" t="IncludeFlat" />
       <e p="Temp\bin" t="ExcludeRecursive" />
     </e>
