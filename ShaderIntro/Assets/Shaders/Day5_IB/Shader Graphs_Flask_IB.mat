@@ -33,4 +33,4 @@ Material:
     - Vector3_4CC77624: {r: 0.76, g: 0, b: 0, a: 0}
     - Vector3_CC7D27FE: {r: -0.14, g: 1, b: 0, a: 0}
     - Water_LVL_Normal: {r: -0.017145252, g: 0.9996954, b: 0.017751724, a: 0}
-    - Water_LVL_Origin: {r: 5.71, g: 1.5, b: 9.09, a: 0}
+    - Water_LVL_Origin: {r: 5.712, g: 1.411, b: 9.088, a: 0}

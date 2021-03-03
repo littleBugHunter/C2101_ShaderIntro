@@ -1,0 +1,45 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!21 &2100000
+Material:
+  serializedVersion: 6
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_Name: GlowPuls
+  m_Shader: {fileID: -6465566751694194690, guid: 9795245127fa05446bb75ce3e6a299f9, type: 3}
+  m_ShaderKeywords: 
+  m_LightmapFlags: 4
+  m_EnableInstancingVariants: 0
+  m_DoubleSidedGI: 0
+  m_CustomRenderQueue: -1
+  stringTagMap: {}
+  disabledShaderPasses: []
+  m_SavedProperties:
+    serializedVersion: 3
+    m_TexEnvs:
+    - Texture2D_2BE2E014:
+        m_Texture: {fileID: 2800000, guid: 481a03ef08d38e24f80b30c8dff0c0fe, type: 3}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - Texture2D_AAC1AB1:
+        m_Texture: {fileID: 2800000, guid: 6b253a7e444551e409b370d254a148e2, type: 3}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - Texture2D_DC81317D:
+        m_Texture: {fileID: 2800000, guid: 3a7dc669ffcae0549b9806bd898a9557, type: 3}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    m_Floats:
+    - Vector1_3AC26356: 0
+    - Vector1_4D1766A1: 0
+    - Vector1_696AB750: 1.3
+    - Vector1_933DD673: 0.02
+    - Vector1_CA21961C: 5.6
+    - Vector1_FEB86381: -0
+    m_Colors:
+    - Color_64EFADDD: {r: 0, g: 0.5151515, b: 1, a: 0}
+    - Color_7828BFD7: {r: 0.5471402, g: 1, b: 0.19245279, a: 0}
+    - Vector3_CF733A5: {r: 1, g: 1, b: 1, a: -0.34}
+  m_BuildTextureStacks: []

@@ -1,0 +1,42 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!21 &2100000
+Material:
+  serializedVersion: 6
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_Name: GlowPurpelBlue
+  m_Shader: {fileID: -6465566751694194690, guid: e7d568058b58b3e42a9145d94ca57236, type: 3}
+  m_ShaderKeywords: 
+  m_LightmapFlags: 4
+  m_EnableInstancingVariants: 0
+  m_DoubleSidedGI: 0
+  m_CustomRenderQueue: -1
+  stringTagMap: {}
+  disabledShaderPasses: []
+  m_SavedProperties:
+    serializedVersion: 3
+    m_TexEnvs:
+    - Texture2D_5B9207B1:
+        m_Texture: {fileID: 2800000, guid: 6b253a7e444551e409b370d254a148e2, type: 3}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    - Texture2D_93F8EFD3:
+        m_Texture: {fileID: 2800000, guid: b111ac8bd6f368f468f6814717ab5455, type: 3}
+        m_Scale: {x: 1, y: 1}
+        m_Offset: {x: 0, y: 0}
+    m_Floats:
+    - GlowPower: -0.97
+    - GlowWhite: 1
+    - Vector1_300E7424: 9.34
+    - Vector1_3F17D5D: 0.8
+    - Vector1_63EDF8B9: 0.68
+    - Vector1_7310095: 1.45
+    - Vector1_7B239CE0: 1.38
+    - Vector1_D00195CD: 4.1
+    - Vector1_D38F8342: 533333.7
+    m_Colors:
+    - Color_A182D840: {r: 0, g: 0.1265676, b: 1, a: 1}
+  m_BuildTextureStacks: []

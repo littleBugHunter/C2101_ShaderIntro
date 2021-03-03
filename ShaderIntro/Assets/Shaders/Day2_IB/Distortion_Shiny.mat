@@ -93,7 +93,7 @@ Material:
     - _WorkflowMode: 1
     - _ZWrite: 1
     m_Colors:
-    - Color_F2892B0D: {r: 0.7028302, g: 0.9454603, b: 1, a: 0.6392157}
+    - Color_F2892B0D: {r: 1, g: 1, b: 1, a: 0.6392157}
     - Vector2_64D8AD5B: {r: -0.15, g: 0, b: 0, a: 0}
     - Vector3_A3A13CFC: {r: -0.12, g: 0.09, b: 0, a: 0}
     - Vector3_B68CCE77: {r: 0, g: 0, b: 0, a: 0}

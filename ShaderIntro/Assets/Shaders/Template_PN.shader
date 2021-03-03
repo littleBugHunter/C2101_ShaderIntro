@@ -36,6 +36,7 @@ Shader "ShaderCourse/Template"
 
             sampler2D _MainTex;
             float4 _MainTex_ST;
+            
 
             VertexToFragment VertexShader_ ( VertexData vertexData )
             {
