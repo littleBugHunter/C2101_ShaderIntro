@@ -1,0 +1,41 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!21 &2100000
+Material:
+  serializedVersion: 6
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_Name: 3DEffect
+  m_Shader: {fileID: 4800000, guid: 22537d335a7c4414db8c679c69dce1ef, type: 3}
+  m_ShaderKeywords: 
+  m_LightmapFlags: 4
+  m_EnableInstancingVariants: 0
+  m_DoubleSidedGI: 0
+  m_CustomRenderQueue: -1
+  stringTagMap: {}
+  disabledShaderPasses: []
+  m_SavedProperties:
+    serializedVersion: 3
+    m_TexEnvs:
+    - _MainTex:
+        m_Texture: {fileID: 2800000, guid: 40da0395b61db4448b98bab66d6b549c, type: 3}
+        m_Scale: {x: 10, y: 10}
+        m_Offset: {x: 0, y: 0}
+    m_Floats:
+    - BlendMode: 0
+    - Light: 0
+    - MyDstMode: 1
+    - MySrcMode: 1
+    - _EffectOffset: -1.14
+    - _Eyedistance: 1
+    - _ScrollSpeed: -1
+    - _Value: 0.77
+    m_Colors:
+    - LightDir: {r: -0.94, g: 1.83, b: 1.44, a: 0}
+    - _Color: {r: 0.8018868, g: 0.10969208, b: 0.10969208, a: 1}
+    - _Color0: {r: 1, g: 0.7971698, b: 0.7971698, a: 1}
+    - _Color1: {r: 14.203556, g: 0, b: 0, a: 1}
+    - _Color2: {r: 0, g: 5.709804, b: 7.9686275, a: 1}
+    - _EffectOffset: {r: -0.001, g: 0.0003, b: -0.002, a: 0}
