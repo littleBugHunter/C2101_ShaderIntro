@@ -1,2 +1,2 @@
 Lost the Lava shader i made due to Git Hickups... 
-So this one i made a few days ago.
+So this one i made a few days ago just through shadergraph experimentation
