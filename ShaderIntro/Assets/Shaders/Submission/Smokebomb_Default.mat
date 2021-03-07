@@ -1,6 +1,6 @@
 %YAML 1.1
 %TAG !u! tag:unity3d.com,2011:
---- !u!114 &-4966230049482150162
+--- !u!114 &-2642124123289164409
 MonoBehaviour:
   m_ObjectHideFlags: 11
   m_CorrespondingSourceObject: {fileID: 0}
@@ -20,7 +20,7 @@ Material:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: Smokebomb
+  m_Name: Smokebomb_Default
   m_Shader: {fileID: -6465566751694194690, guid: 57badf82a1b74454b9520e4430532ab1,
     type: 3}
   m_ShaderKeywords: 
@@ -34,11 +34,11 @@ Material:
     serializedVersion: 3
     m_TexEnvs:
     - Texture2D_20671D4D:
-        m_Texture: {fileID: 2800000, guid: 3cebcf4c688aeeb41ad8d26ef12f6c26, type: 3}
+        m_Texture: {fileID: 2800000, guid: 02cf568a0822ba14cabf4cf4731f99e4, type: 3}
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     - Texture2D_4A807A2F:
-        m_Texture: {fileID: 2800000, guid: 3cebcf4c688aeeb41ad8d26ef12f6c26, type: 3}
+        m_Texture: {fileID: 2800000, guid: 42798ac750ee6fb458cca020d699bc4d, type: 3}
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     - Texture2D_67C29903:
@@ -82,16 +82,16 @@ Material:
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     m_Floats:
-    - Vector1_3D643C86: 2.64
-    - Vector1_564B3645: 5
-    - Vector1_6CFB42E1: 0.91
-    - Vector1_7D49AF04: 4.97
+    - Vector1_3D643C86: 3
+    - Vector1_564B3645: 2
+    - Vector1_6CFB42E1: 0.8
+    - Vector1_7D49AF04: 9
     - Vector1_9D8EF500: -0.4
-    - Vector1_A2DA13F6: -3.45
-    - Vector1_BE4D5B8C: 10.89
-    - Vector1_C3AB1B8C: -0.5
-    - Vector1_D676948C: 43.51
-    - Vector1_DC5B1A5B: 3
+    - Vector1_A2DA13F6: 0.3
+    - Vector1_BE4D5B8C: 8
+    - Vector1_C3AB1B8C: 2
+    - Vector1_D676948C: 10
+    - Vector1_DC5B1A5B: 4
     - _AlphaClip: 0
     - _Blend: 0
     - _BumpScale: 1
@@ -114,10 +114,10 @@ Material:
     - _WorkflowMode: 1
     - _ZWrite: 1
     m_Colors:
-    - Color_B3B09809: {r: 0.5909422, g: 0.2235294, b: 1, a: 0}
-    - Vector3_3F0843DD: {r: -0.15, g: -0.08, b: -0.1, a: 0}
-    - Vector3_553901E: {r: 0.1, g: 0.2, b: 0.1, a: 0}
-    - Vector3_F606424E: {r: 0.05, g: 0.05, b: 0.05, a: 0}
+    - Color_B3B09809: {r: 0.96078426, g: 0.14169335, b: 0.13333336, a: 0}
+    - Vector3_3F0843DD: {r: -0.1, g: -0.1, b: -0.1, a: 0}
+    - Vector3_553901E: {r: -0.1, g: -0.1, b: -0.1, a: 0}
+    - Vector3_F606424E: {r: -0.05, g: -0.05, b: -0.05, a: 0}
     - _BaseColor: {r: 1, g: 1, b: 1, a: 1}
     - _Color: {r: 1, g: 1, b: 1, a: 1}
     - _EmissionColor: {r: 0, g: 0, b: 0, a: 1}
